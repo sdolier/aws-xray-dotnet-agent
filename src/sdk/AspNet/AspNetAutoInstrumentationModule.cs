@@ -38,7 +38,7 @@ namespace Amazon.XRay.Recorder.AutoInstrumentation
         {
             // Load the satellite dependencies of AWSXRayRecorder.AutoInstrumentation.dll at runtime
             // This can avoid duplicate introducing dependency when the same dependency's already in user's application
-            AppDomain.CurrentDomain.AssemblyResolve += AWSXRayAutoInstrumentationDependency;
+            // AppDomain.CurrentDomain.AssemblyResolve += AWSXRayAutoInstrumentationDependency;
             AspNetRequestUtil.InitializeAspNet();
         }
 
